@@ -5,9 +5,21 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+zmodload zsh/zprof
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # Customize to your needs...
+source $HOME/.zshrc.ob
+
+autoload -Uz promptinit
+promptinit
+prompt nicoulaj
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
