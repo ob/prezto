@@ -19,7 +19,7 @@ source $HOME/.zshrc.ob
 
 autoload -Uz promptinit
 promptinit
-prompt nicoulaj
+prompt kylewest
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
